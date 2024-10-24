@@ -32,7 +32,7 @@ namespace Garland
                 var prefab = SystemAPI.GetSingleton<Spawner>().Prefab;
 
                 // Instantiating an entity creates copy entities with the same component types and values.
-                var instances = state.EntityManager.Instantiate(prefab, 500, Allocator.Temp);
+                var instances = state.EntityManager.Instantiate(prefab, 5, Allocator.Temp);
 
                 // Unlike new Random(), CreateFromIndex() hashes the random seed
                 // so that similar seeds don't produce similar results.
